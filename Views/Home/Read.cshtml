@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Dish
+
+<div class="text-center">
+    <a href="/">Home</a>
+
+            <hr>
+            <h2>@ViewBag.Dish.Name</h2>
+            <h4>Chef: @ViewBag.Dish.Chef</h4>
+            <h4>Tastiness: @ViewBag.Dish.Tastiness</h4>
+            <h4>Calories: @ViewBag.Dish.Calories</h4>
+            <h4>Description: @ViewBag.Dish.Description</h4>
+            <h4>CreatedAt: @ViewBag.Dish.CreatedAt</h4>
+
+    <a href="/edit/@ViewBag.Dish.DishId">Edit</a>
+</div>
